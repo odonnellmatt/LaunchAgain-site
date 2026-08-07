@@ -32,7 +32,7 @@ swift build -Xswiftc -warnings-as-errors -Xswiftc -strict-concurrency=complete
     <h2>Identity hygiene</h2>
     <p>Use generic paths, addresses, account labels, and fixtures. Never commit a real name, username, email address, machine name, home path, registry, profile, diagnostics export, signing identity, credential, local settings file, or build log. The source repository stays private; the publishing script copies only the allow-listed <code>site/</code> payload into the separate public Pages repository.</p>
     <h2>Release rule</h2>
-    <p>The top changelog version drives the bundle and DMG version. Hosted validation is keyed by commit so evidence cannot be displaced by a delayed event for an older revision. Public distribution requires Developer ID signing, Apple notarization, stapling, checksums, a matching tag, and release notes supported by observed validation output.</p>
+    <p>The top changelog version drives the bundle and DMG version. Hosted validation is keyed by commit so evidence cannot be displaced by a delayed event for an older revision. Workflows track the current official Node 24 action majors, including <code>actions/checkout@v7</code>. Public distribution requires Developer ID signing, Apple notarization, stapling, checksums, a matching tag, and release notes supported by observed validation output.</p>
   </main>
   <footer>Maintainer summary · See AGENTS.md in the private repository for the complete contract.</footer>
 </body>
